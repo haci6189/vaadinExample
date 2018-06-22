@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing height="30%">
+   <vaadin-label style-name="h1" size-auto plain-text>
+     Einkaufsliste bearbeiten 
+   </vaadin-label>
+   <vaadin-horizontal-layout spacing margin>
+    <vaadin-text-field caption="Bezeichnung" _id="bezeichnung" :middle :right :expand></vaadin-text-field>
+    <vaadin-text-field caption="Menge" _id="menge" :expand></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout width="53%" :expand>
+    <vaadin-horizontal-layout spacing margin>
+     <vaadin-button style-name="primary" plain-text _id="buttonSave">
+       Ändern 
+     </vaadin-button>
+     <vaadin-button plain-text _id="buttonCancel">
+       Abbruch 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout spacing height-full margin>
+     <vaadin-button style-name="danger" plain-text _id="buttonDel">
+       Löschen 
+     </vaadin-button>
+     <vaadin-button style-name="friendly" plain-text _id="buttonAdd">
+       Hinzufügen 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
